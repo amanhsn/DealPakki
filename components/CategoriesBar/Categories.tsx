@@ -2,7 +2,7 @@ import React from 'react';
 
 const CategoryBluePrint = ({ names }) => { // Change 'name' to 'names'
   return (
-    <div className="flex justify-start items-center flex-grow-0 flex-shrink-0 h-[55px] relative overflow-hidden gap-6 padding-x py-1 bg-white border-t-0 border-r-0 border-b border-l-0 border-[#b8b6b0]">
+    <div className="flex justify-start items-center flex-grow-0 flex-shrink-0 h-[55px] relative overflow-auto gap-6 padding-x py-1 bg-white border-t-0 border-r-0 border-b border-l-0 border-[#b8b6b0]">
       <p className="flex-grow-0 flex-shrink-0 w-[111px] text-xs font-medium text-left uppercase text-[#b8b6b0]">
         CATEGORIES
       </p>

@@ -12,7 +12,9 @@ const Navbar = () => {
       sm:px-10 px-2 py-3">
     <Logo />
     <div className="ml-4 flex space-x-2">
+    <div className="searchbar">
     <Location />
+    </div>
     </div>
     <div className="ml-4 flex space-x-4"></div>
     <div className="searchbar">

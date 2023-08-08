@@ -10,6 +10,7 @@ const SearchBar = () => {
       <div
         className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-[5px] px-5 py-1 rounded-tl-[100px] rounded-bl-[100px] bg-white border-t-0 border-r border-b-0 border-l-0 border-[#b8b6b0]"
       >
+        <button id="all-button" data-dropdown-toggle="all-categories" className="flex justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-2.5">
         <p className="flex-grow-0 flex-shrink-0 text-xs text-left capitalize text-[#191200]">All</p>
         <div
           className="flex justify-center items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-2.5 pt-0.5"
@@ -31,6 +32,51 @@ const SearchBar = () => {
             ></path>
           </svg>
         </div>
+        </button>
+        <div id="all-categories" className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+      <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="all-button">
+        <li>
+          <button type="button" className="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
+            <div className="inline-flex items-center">
+              <svg aria-hidden="true" className="h-3.5 w-3.5 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us" viewBox="0 0 512 512">
+                {/* US flag SVG path */}
+              </svg>
+              United States
+            </div>
+          </button>
+        </li>
+        <li>
+          <button type="button" className="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
+            <div className="inline-flex items-center">
+              <svg aria-hidden="true" className="h-3.5 w-3.5 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-de" viewBox="0 0 512 512">
+                {/* Germany flag SVG path */}
+              </svg>
+              Germany
+            </div>
+          </button>
+        </li>
+        <li>
+          <button type="button" className="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
+            <div className="inline-flex items-center">
+              <svg aria-hidden="true" className="h-3.5 w-3.5 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-it" viewBox="0 0 512 512">
+                {/* Italy flag SVG path */}
+              </svg>
+              Italy
+            </div>
+          </button>
+        </li>
+        <li>
+          <button type="button" className="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
+            <div className="inline-flex items-center">
+              <svg aria-hidden="true" className="h-3.5 w-3.5 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" id="flag-icon-css-cn" viewBox="0 0 512 512">
+                {/* China flag SVG path */}
+              </svg>
+              China
+            </div>
+          </button>
+        </li>
+      </ul>
+    </div>
       </div>
       <div
         className="flex justify-start items-center self-stretch flex-grow relative gap-2.5 px-[15px] py-2.5 rounded-tr-[100px] rounded-br-[100px]"

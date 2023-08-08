@@ -5,7 +5,7 @@ const CategoriesBar = () => {
     const categoryNames = ["Mobile Phones", "Electronics", "Appliances", "Health and Personal Care", "Toys & Stuff"]; 
 
     return (
-        <div>
+        <div className="content-under">
             <CategoryBluePrint
             names = {categoryNames}
             />

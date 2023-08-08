@@ -2,16 +2,16 @@ import React from "react";
 
 const Hero1 = ({ hero1Headline,hero1Title,hero1Content,hero1Image }) => {
     return (
-<div className="hero1Component flex justify-start items-center flex-grow-0 flex-shrink-0 relative overflow-hidden gap-5 p-10 rounded-[20px] bg-[#ffd565]">
-  <div className="hero1button flex flex-col justify-between items-start self-stretch flex-grow-0 flex-shrink-0 w-[360px] h-">
+<div className="hero1Component flex justify-start items-center flex-grow-0 flex-shrink-0 relative w-[825px] h-[400px] overflow-hidden gap-5 p-10 rounded-[20px] bg-[#ffd565]">
+  <div className="hero1button flex flex-col justify-between items-start self-stretch flex-grow-0 flex-shrink-0  w-[360px]">
     <div className="hero1content flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-5">
       <p className="flex-grow-0 flex-shrink-0 text-[10px] text-left uppercase text-[#191200]">
         {hero1Headline}
       </p>
-      <p className="self-stretch flex-grow-0 flex-shrink-0 w-[360px] text-[34px] text-left capitalize text-[#191200]">
+      <p className="self-stretch flex-grow-0 flex-shrink-0  text-[34px] text-left capitalize text-[#191200]">
         {hero1Title}
       </p>
-      <p className="self-stretch flex-grow-0 flex-shrink-0 w-[360px] text-base text-left capitalize text-[#474133]">
+      <p className="self-stretch flex-grow-0 flex-shrink-0  text-base text-left capitalize text-[#474133]">
         {hero1Content}
       </p>
     </div>
